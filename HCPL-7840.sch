@@ -15804,8 +15804,8 @@ pinhead.lbr 6.4</description>
 </packages>
 <symbols>
 <symbol name="RS">
-<pin name="P$1" x="5.08" y="0" visible="off" length="short" rot="R180"/>
-<pin name="P$2" x="-5.08" y="0" visible="off" length="short"/>
+<pin name="P$1" x="5.08" y="0" visible="off" length="short" swaplevel="1" rot="R180"/>
+<pin name="P$2" x="-5.08" y="0" visible="off" length="short" swaplevel="1"/>
 <wire x1="-2.54" y1="0" x2="-2.54" y2="1.27" width="0.1524" layer="94"/>
 <wire x1="-2.54" y1="1.27" x2="-1.27" y2="1.27" width="0.1524" layer="94"/>
 <wire x1="-1.27" y1="1.27" x2="-1.27" y2="-1.27" width="0.1524" layer="94"/>
@@ -16065,16 +16065,19 @@ C3&gt;1000pf</text>
 <attribute name="NAME" x="34.29" y="146.2786" size="1.778" layer="95"/>
 <attribute name="VALUE" x="41.91" y="148.082" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="RS" gate="G$1" x="33.02" y="251.46"/>
+<instance part="RS" gate="G$1" x="38.1" y="231.14" smashed="yes" rot="R270">
+<attribute name="NAME" x="40.64" y="230.505" size="1.27" layer="95"/>
+</instance>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="R_SENSE" class="0">
 <segment>
-<label x="30.48" y="241.3" size="1.778" layer="95"/>
-<wire x1="43.18" y1="238.76" x2="30.48" y2="238.76" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="238.76" x2="38.1" y2="238.76" width="0.1524" layer="91"/>
 <pinref part="R5" gate="G$1" pin="1"/>
+<pinref part="RS" gate="G$1" pin="P$2"/>
+<wire x1="38.1" y1="236.22" x2="38.1" y2="238.76" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -16509,13 +16512,12 @@ C3&gt;1000pf</text>
 <wire x1="73.66" y1="228.6" x2="73.66" y2="233.68" width="0.1524" layer="91"/>
 <wire x1="73.66" y1="233.68" x2="76.2" y2="233.68" width="0.1524" layer="91"/>
 <junction x="73.66" y="228.6"/>
-<wire x1="73.66" y1="228.6" x2="66.04" y2="226.06" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="226.06" x2="55.88" y2="226.06" width="0.1524" layer="91"/>
-<label x="30.48" y="226.06" size="1.778" layer="95"/>
+<wire x1="73.66" y1="228.6" x2="60.96" y2="223.52" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="223.52" x2="55.88" y2="223.52" width="0.1524" layer="91"/>
 <pinref part="C3" gate="G$1" pin="2"/>
-<wire x1="55.88" y1="226.06" x2="30.48" y2="226.06" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="228.6" x2="55.88" y2="226.06" width="0.1524" layer="91"/>
-<junction x="55.88" y="226.06"/>
+<wire x1="55.88" y1="223.52" x2="38.1" y2="223.52" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="228.6" x2="55.88" y2="223.52" width="0.1524" layer="91"/>
+<junction x="55.88" y="223.52"/>
 <pinref part="C2" gate="G$1" pin="2"/>
 <wire x1="68.58" y1="241.3" x2="68.58" y2="233.68" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="233.68" x2="73.66" y2="228.6" width="0.1524" layer="91"/>
@@ -16534,6 +16536,8 @@ C3&gt;1000pf</text>
 <wire x1="50.8" y1="248.92" x2="60.96" y2="248.92" width="0.1524" layer="91"/>
 <wire x1="73.66" y1="223.52" x2="73.66" y2="228.6" width="0.1524" layer="91"/>
 <pinref part="P-2" gate="1" pin="V-"/>
+<pinref part="RS" gate="G$1" pin="P$1"/>
+<wire x1="38.1" y1="226.06" x2="38.1" y2="223.52" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="L2" gate="G$1" pin="2"/>
