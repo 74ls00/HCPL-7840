@@ -15938,7 +15938,7 @@ response can be obtained. Capacitor C9
 should be chosen so that the product of 
 R1a and C9 is equal to the product of 
 R3 and C5.</text>
-<text x="38.1" y="208.28" size="1.778" layer="98" rot="MR180">R5C3 фильтр
+<text x="40.64" y="203.2" size="1.778" layer="98" rot="MR180">R5C3 фильтр
 При входном делителе R5 не нужен
 
 C3&gt;1000pf</text>
