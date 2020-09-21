@@ -1880,8 +1880,8 @@ pinhead.lbr 6.4</description>
 <element name="C11" library="rcl" package="E2,5-5" value="470m" x="8.5725" y="39.0525" rot="R90"/>
 <element name="L4" library="rcl" package="0204/7" value="" x="-11.43" y="33.655" rot="R270"/>
 <element name="C19" library="rcl" package="C0805" value="100n" x="3.4925" y="25.0825" rot="MR270"/>
-<element name="R2" library="rcl" package="M0805" value="1k00" x="-6.0325" y="18.7325" rot="MR180"/>
-<element name="R1" library="rcl" package="M0805" value="1k00" x="-6.0325" y="11.7475" rot="MR180"/>
+<element name="R2" library="rcl" package="M0805" value="10k" x="-6.0325" y="18.7325" rot="MR180"/>
+<element name="R1" library="rcl" package="M0805" value="10k" x="-6.0325" y="11.7475" rot="MR180"/>
 <element name="C17" library="rcl" package="C0805" value="100n" x="-11.43" y="40.64" rot="MR90"/>
 <element name="DA5" library="linear" package="SOT89" value="78L05F" x="7.62" y="23.8125" rot="MR90"/>
 <element name="VD1" library="diode" package="SMB" value="SS12" x="16.51" y="35.8775" rot="MR180"/>
